@@ -46,17 +46,17 @@
   </div>
 </div>
 
-{{#if showLikes}}
-  <div class="num likes topic-list-data">
-    {{#if hasLikes}}
-      <a href='{{topic.summaryUrl}}'>
-        {{number topic.like_count}} {{d-icon "heart"}}
-      </a>
-    {{/if}}
-  </div>
-{{/if}}
 
-{{#if showOpLikes}}
+  <div class="num likes topic-list-data">
+   
+      <a href='{{topic.summaryUrl}}'>
+        {{number topic.like_count}} {{d-icon "thumbs-up"}}
+      </a>
+  
+  </div>
+
+
+{{!-- {{#if showOpLikes}}
   <div class="num likes topic-list-data">
     {{#if hasOpLikes}}
       <a href='{{topic.summaryUrl}}'>
@@ -64,7 +64,7 @@
       </a>
     {{/if}}
   </div>
-{{/if}}
+{{/if}} --}}
 
 {{raw "list/posts-count-column" topic=topic}}
 
