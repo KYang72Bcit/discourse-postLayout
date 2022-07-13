@@ -8,14 +8,24 @@
     </label>
   </td>
 {{/if}} --}}
+{{!-- shopify: element need:
+1. poster avatar
+2. category name
+3. Category title
+4. Poster username
+5. Post content
+6. Date
+7. Views
+8. Likes
+9. Replies --}}
 
 <td class='main-link clearfix topic-list-data'>
   {{~raw-plugin-outlet name="topic-list-before-status"}}
   {{raw "topic-status" topic=topic}}
   {{~topic-link topic class="raw-link raw-topic-link"}}
-  {{~#if showTopicPostBadges}}
+  {{!-- {{~#if showTopicPostBadges}}
     {{~raw "topic-post-badges" unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
-  {{~/if}}
+  {{~/if}} --}}
   {{discourse-tags topic mode="list" tagsForUser=tagsForUser}}
   {{#if expandPinned}}
     {{raw "list/topic-excerpt" topic=topic}}
