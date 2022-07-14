@@ -38,8 +38,9 @@
   {{/if}}
   <div class='post details'>
     <a href="/users/{{topic.creator.username}}" data-auto-route="true"
-      data-user-card="{{topic.creator.username}}">{{topic.creator.username}}</a> <a href={{topic.url}}>{{format-date
-      topic.createdAt format="tiny"}}</a>
+      data-user-card="{{topic.creator.username}}">{{topic.creator.username}}
+    </a>
+    {{!-- <a href={{topic.url}}>{{format-date topic.createdAt format="tiny"}}</a> --}}
     <div class="num likes topic-list-data">
 
       <a href='{{topic.summaryUrl}}'>
@@ -59,7 +60,7 @@
       </a>
 
     </div> --}}
-
+    {{raw "list/activity-column" topic=topic class="num topic-list-data" tagName="div"}}
     {{raw "list/posts-count-column" topic=topic}}
 
     {{!-- <div class="num views {{topic.viewsHeat}} topic-list-data">

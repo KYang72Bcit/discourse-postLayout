@@ -2,8 +2,5 @@
    <a href='{{topic.summaryUrl}}'>
         {{number topic.replyCount}} {{d-icon "comment"}}
       </a>
-  {{!-- <button class="btn-link posts-map badge-posts {{view.likesHeat}}" >
-    {{raw-plugin-outlet name="topic-list-before-reply-count"}}
-    {{number topic.replyCount noTitle="true" }}
-  </button> --}}
+ 
 </div>
