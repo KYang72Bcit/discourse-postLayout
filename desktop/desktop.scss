@@ -2,7 +2,7 @@ div.main-link > div.grid {
   display: grid;
   grid-template-columns: 15% 15% 70%;
   align-items: center;
-  .createTime {
+  .createTime > a {
     color: var(--primary-medium) !important;
     text-align: center !important;
   }
@@ -12,7 +12,7 @@ div.main-link > div.grid {
 }
 tr.topic-list-item {
   display: grid !important;
-  width: 90%;
+  width: 100%;
   grid-template-columns: 10% 80%;
   margin-left: 4%;
 }
