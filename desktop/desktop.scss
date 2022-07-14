@@ -1,3 +1,11 @@
+div.main-link > div.grid {
+  display: grid;
+  grid-column: 15% 15% 70%;
+  align-items: center;
+  div.like {
+    align-self:end;
+  } 
+}
 tr.topic-list-item {
   display: grid !important;
   width: 90%;
@@ -28,10 +36,15 @@ tr.topic-list-item {
  {
   font-size: 13px;
   display: block;
-  padding: 0% !important;
+  //padding: 0% !important;
   margin: 3px;
-  background-color: #d2d2d3;
+  
   border-radius: 4%;
+  a, span {
+    background-color: #d2d2d3;
+    padding: auto;
+    
+  }
   a {
     font-weight: 700;
     color: var(--primary-900);

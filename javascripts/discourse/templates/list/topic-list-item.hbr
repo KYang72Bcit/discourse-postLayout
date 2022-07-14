@@ -19,7 +19,7 @@
   {{raw "list/topic-excerpt" topic=topic}}
 
   {{/if}}
-  <div class='post details flex'>
+  <div class='post details grid'>
     <div class="creator"> <span>By</span>
       <a href="/users/{{topic.creator.username}}" data-auto-route="true"
         data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
