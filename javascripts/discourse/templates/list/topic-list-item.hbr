@@ -70,7 +70,7 @@
 
 <div class="num views {{topic.viewsHeat}} topic-list-data">
   {{raw-plugin-outlet name="topic-list-before-view-count"}}
-  {{number topic.views numberKey="views_long"}} {{d-icon "heart"}}
+  {{number topic.views numberKey="views_long"}} {{d-icon "far-eye"}}
 </div>
 
 {{!-- <div class="last-post topic-list-data">
