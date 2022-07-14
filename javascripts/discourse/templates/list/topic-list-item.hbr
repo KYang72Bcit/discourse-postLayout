@@ -36,27 +36,36 @@
   {{raw "list/topic-excerpt" topic=topic}}
 
   {{/if}}
-  <div class='postDetails'>
-    {{~#if topic.creator ~}}
+  <div class='post details'>
     <a href="/users/{{topic.creator.username}}" data-auto-route="true"
       data-user-card="{{topic.creator.username}}">{{topic.creator.username}}</a> <a href={{topic.url}}>{{format-date
       topic.createdAt format="tiny"}}</a>
-    {{~/if ~}}
-     {{raw "list/action-list" topic=topic postNumbers=topic.liked_post_numbers className="likes" icon="heart"}}
-     <div class="num likes topic-list-data">
+    <div class="num likes topic-list-data">
 
-  <a href='{{topic.summaryUrl}}'>
-    {{number topic.like_count}} {{d-icon "thumbs-up"}}
-  </a>
+      <a href='{{topic.summaryUrl}}'>
+        {{number topic.like_count}} {{d-icon "thumbs-up"}}
+      </a>
 
-</div>
+    </div>
+    <div class="num views {{topic.viewsHeat}} topic-list-data">
+      {{raw-plugin-outlet name="topic-list-before-view-count"}}
+      {{number topic.views numberKey="views_long"}} {{d-icon "far-eye"}}
+    </div>
+    {{raw "list/action-list" topic=topic postNumbers=topic.liked_post_numbers className="likes" icon="heart"}}
+    {{!-- <div class="num likes topic-list-data">
 
-{{raw "list/posts-count-column" topic=topic}}
+      <a href='{{topic.summaryUrl}}'>
+        {{number topic.like_count}} {{d-icon "thumbs-up"}}
+      </a>
 
-<div class="num views {{topic.viewsHeat}} topic-list-data">
-  {{raw-plugin-outlet name="topic-list-before-view-count"}}
-  {{number topic.views numberKey="views_long"}} {{d-icon "far-eye"}}
-</div>
+    </div> --}}
+
+    {{raw "list/posts-count-column" topic=topic}}
+
+    {{!-- <div class="num views {{topic.viewsHeat}} topic-list-data">
+      {{raw-plugin-outlet name="topic-list-before-view-count"}}
+      {{number topic.views numberKey="views_long"}} {{d-icon "far-eye"}}
+    </div> --}}
   </div>
 
 </div>
