@@ -14,14 +14,14 @@ div.main-link > div.grid {
 }
 div.main-link {
   a.title {
-    font-weight: 700;
-    font-size: var(--font-up-2);
-    color: var(--header_primary);
+    font-weight: 700 !important;
+    font-size: var(--font-up-2) !important;
+    color: var(--header_primary) !important;
   }
 }
 tr.topic-list-item {
   hover: {
-    border: 1px solid var(--tertiary);
+    border: 1px solid var(--tertiary) !important;
   }
   display: grid !important;
   width: 100%;
