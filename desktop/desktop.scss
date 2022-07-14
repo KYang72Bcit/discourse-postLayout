@@ -1,6 +1,8 @@
 tr.topic-list-item {
   display: grid !important;
+  width: 90%;
   grid-template-columns: 10% 80%;
+  margin-left: 4%;
 }
 .poster-avatar {
   justify-self: center;
@@ -24,11 +26,12 @@ tr.topic-list-item {
 
 .topic-list .creator
  {
-  font-size:  var(--font-up-1) !important;
+  font-size: 13px;
   display: block;
+  padding: 0% !important;
   margin: 3px;
   background-color: #d2d2d3;
-  border-radius: 1%;
+  border-radius: 4%;
   a {
     font-weight: 700;
     color: var(--primary-900);
@@ -41,7 +44,6 @@ tr.topic-list-item {
 
 .topic-list {
   .topic-list-data,
-  .creator a,
   .editor a {
     color: var(--primary-medium);
   }
@@ -141,9 +143,9 @@ nav.post-controls button.has-like {
   color: var(--tertiary);
 }
 
-.creator .badge-wrapper.bullet span.badge-category {
-  margin-top: -2px;
-}
+// .creator .badge-wrapper.bullet span.badge-category {
+//   margin-top: -2px;
+// }
 
 img.avatar {
   border-radius: 3px;

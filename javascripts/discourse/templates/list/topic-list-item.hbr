@@ -20,7 +20,7 @@
 
   {{/if}}
   <div class='post details flex'>
-    <div class="creator"> By
+    <div class="creator"> <span>By</span>
       <a href="/users/{{topic.creator.username}}" data-auto-route="true"
         data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
       </a>
@@ -29,7 +29,7 @@
     </div>
 
     <div class="createTime">
-       <a href={{topic.url}}>{{d-icon "fa-clock"}} {{~format-date topic.createdAt}}</a>
+       <a href={{topic.url}}>{{d-icon "fa-clock"}} {{format-date topic.createdAt}}</a>
     </div>
 
    
