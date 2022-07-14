@@ -1,15 +1,15 @@
 div.main-link > div.grid {
   display: grid;
-  grid-template-columns: 15% 15% 70%;
+  grid-template-columns: 20% 20% 10% 50%;
   align-items: center;
   .createTime > a {
     color: var(--primary-medium) !important;
     text-align: center !important;
   }
   div.like {
-    align-self:end;
+    grid-column-start: -1;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 33.3%)
   } 
 }
 tr.topic-list-item {
