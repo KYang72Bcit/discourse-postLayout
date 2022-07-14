@@ -4,7 +4,7 @@ tr.topic-list-item {
 }
 .poster-avatar {
   justify-self: center;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .topic-list > .topic-list-body > .topic-list-item:nth-child(odd) {
@@ -22,11 +22,17 @@ tr.topic-list-item {
   text-decoration: underline;
 }
 
-.topic-list .creator,
-.topic-list .editor {
-  font-size: 13px;
+.topic-list .creator
+ {
+  font-size:  var(--font-up-1) !important;
   display: block;
-  margin-top: 3px;
+  margin: 3px;
+  background-color: #d2d2d3;
+  border-radius: 1%;
+  a {
+    font-weight: 700;
+    color: var(--primary-900);
+  }
 }
 
 .topic-list .main-link {
