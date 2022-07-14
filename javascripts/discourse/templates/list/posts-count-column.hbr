@@ -1,6 +1,9 @@
-<{{view.tagName}} class='num posts-map posts {{view.likesHeat}} topic-list-data' title='{{view.title}}'>
-  <button class="btn-link posts-map badge-posts {{view.likesHeat}}" aria-label="{{view.title}}">
+<div class='num posts-map posts {{view.likesHeat}} topic-list-data' title='{{view.title}}'>
+   <a href='{{topic.summaryUrl}}'>
+        {{number topic.replyCount}} {{d-icon "chat_bubble"}}
+      </a>
+  {{!-- <button class="btn-link posts-map badge-posts {{view.likesHeat}}" >
     {{raw-plugin-outlet name="topic-list-before-reply-count"}}
-    {{number topic.replyCount noTitle="true" ariaLabel=view.title}}
-  </button>
-</{{view.tagName}}>
+    {{number topic.replyCount noTitle="true" }}
+  </button> --}}
+</div>
