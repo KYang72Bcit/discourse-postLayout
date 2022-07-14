@@ -29,7 +29,7 @@
     </div>
 
     <div class="createTime">
-       <a href={{topic.url}}> {{d-icon "far fa-calendar-alt"}}{{d-icon "clock-o"}}{{format-date topic.createdAt}}</a>
+       <a href={{topic.url}}> {{d-icon "fa-calendar-star"}}{{d-icon "clock-o"}}{{format-date topic.createdAt}}</a>
     </div>
     
 
