@@ -1,5 +1,6 @@
-.topic-list-item {
+tr.topic-list-item {
   display: grid !important;
+  grid-template-columns: 20% 80%;
 }
 .topic-list > .topic-list-body > .topic-list-item:nth-child(odd) {
   background-color: var(--secondary);
