@@ -1,6 +1,6 @@
 div.main-link > div.grid {
   display: grid;
-  grid-template-columns: 20% 20% 10% 50%;
+  grid-template-columns: 20% 20% 25% 30%;
   align-items: center;
   .createTime > a {
     color: var(--primary-medium) !important;
@@ -12,7 +12,17 @@ div.main-link > div.grid {
     grid-template-columns: repeat(3, 33.3%)
   } 
 }
+div.main-link {
+  a.title {
+    font-weight: 700;
+    font-size: var(--font-up-2);
+    color: var(--header_primary);
+  }
+}
 tr.topic-list-item {
+  hover: {
+    border: 1px solid var(--tertiary);
+  }
   display: grid !important;
   width: 100%;
   grid-template-columns: 10% 80%;
@@ -182,9 +192,10 @@ img.avatar {
   font-size: 0.75em;
   margin-left: 5px;
 }
-.flex {
-  display:flex
+.category {
+  color: var(--tertiary) !important;
 }
+
 
 body {
   .topic-list-item.visited a.badge-wrapper,
