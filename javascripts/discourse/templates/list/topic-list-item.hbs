@@ -24,10 +24,14 @@
       <a href="/users/{{topic.creator.username}}" data-auto-route="true"
         data-user-card="{{topic.creator.username}}">{{topic.creator.username}}
       </a>
-      {{raw "list/activity-column" topic=topic class="num topic-list-data" tagName="div"}}
+
+       <a href={{topic.url}}>{{format-date topic.createdAt format="large"}}
+
+       </a>
+      {{!-- {{raw "list/activity-column" topic=topic class="num topic-list-data" tagName="div"}} --}}
     </div>
 
-    {{!-- <a href={{topic.url}}>{{format-date topic.createdAt format="tiny"}}</a> --}}
+   
     <div class="like veiw reply flex">
       <div class="num likes topic-list-data">
 
