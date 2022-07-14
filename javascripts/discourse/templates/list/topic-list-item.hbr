@@ -5,23 +5,6 @@
 </div>
 {{~raw-plugin-outlet name="topic-list-before-columns"}}
 
-{{!-- {{#if bulkSelectEnabled}}s
-<td class="bulk-select topic-list-data">
-  <label for="bulk-select-{{topic.id}}">
-    <input type="checkbox" class="bulk-select" id="bulk-select-{{topic.id}}">
-  </label>
-</td>
-{{/if}} --}}
-{{!-- shopify: element need:
-1. poster avatar
-2. category name
-3. Category title
-4. Poster username
-5. Post content
-6. Date
-7. Views
-8. Likes
-9. Replies --}}
 
 <div class='main-link clearfix topic-list-data'>
   <div class='category'>
@@ -44,7 +27,7 @@
       {{!-- {{raw "list/activity-column" topic=topic class="num topic-list-data" tagName="div"}} --}}
     </div>
 
-    <a href={{topic.url}}>{{format-date topic.first_post format="large"}}</a>
+    <a href={{topic.url}}>{{format-date topic.createdAt format="large"}}</a>
     <div class="like veiw reply flex">
       <div class="num likes topic-list-data">
 
