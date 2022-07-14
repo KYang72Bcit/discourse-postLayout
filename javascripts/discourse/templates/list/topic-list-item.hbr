@@ -33,7 +33,7 @@
     </div>
 
    
-    <div class="like veiw reply">
+    <div class="like view reply">
       <div class="num likes topic-list-data">
 
         <a href='{{topic.summaryUrl}}'>

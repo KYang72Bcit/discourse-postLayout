@@ -1,18 +1,23 @@
 div.main-link > div.grid {
   display: grid;
-  grid-template-columns: 20% 20% 25% 30%;
+  grid-template-columns: 18% 18% 20% 34%;
   align-items: center;
   .createTime > a {
     color: var(--primary-medium) !important;
     text-align: center !important;
-    font-size: 13px
+    font-size: var(--font-0-rem);
 
   }
   div.like {
     grid-column-start: 4;
     display: grid;
-    grid-template-columns: repeat(3, 33.3%)
+    grid-template-columns: repeat(3, 33.3%);
+    .views {
+      border-left: solid 1px var(--primary-low-mid);
+      border-right: solid 1px var(--primary-low-mid);
+    }
   } 
+
 }
 div.main-link {
   a.title {
@@ -52,14 +57,14 @@ tr.topic-list-item {
 
 .topic-list .creator
  {
-  font-size: 13px;
+  font-size: var(--font-0-rem);;
   display: block;
   //padding: 0% !important;
   margin: 3px;
   
   border-radius: 4%;
   a, span {
-    background-color: #d2d2d3;
+    background-color: var(--primary-very-low);
     padding: auto;
     
   }
