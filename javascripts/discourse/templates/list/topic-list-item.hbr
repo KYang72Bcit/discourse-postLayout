@@ -29,15 +29,16 @@
     </div>
 
     <div class="createTime">
-       <a href={{topic.url}}> {{d-icon "fas-clock-o"}}{{d-icon "clock-o"}}{{format-date topic.createdAt}}</a>
+       <a href={{topic.url}}> {{d-icon "far-calendar-alt"}}{{d-icon "clock-o"}}{{format-date topic.createdAt}}</a>
     </div>
+    
 
    
     <div class="like view reply">
       <div class="num likes topic-list-data">
 
         <a href='{{topic.summaryUrl}}'>
-          {{d-icon "thumbs-up"}} {{number topic.like_count}}
+          {{d-icon "far-thumbs-up"}} {{number topic.like_count}}
         </a>
 
       </div>
