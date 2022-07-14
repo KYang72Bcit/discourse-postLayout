@@ -1,15 +1,16 @@
 {{!-- //记得改回.hbr --}}
 <div class='poster-avatar'>
-    <a href="{{topic.firstPostUrl}}" data-user-card="{{topic.creator.username}}">{{avatar topic.creator imageSize="large"}}</a>
-  </div>
+  <a href="{{topic.firstPostUrl}}" data-user-card="{{topic.creator.username}}">{{avatar topic.creator
+    imageSize="large"}}</a>
+</div>
 {{~raw-plugin-outlet name="topic-list-before-columns"}}
 
 {{!-- {{#if bulkSelectEnabled}}s
-  <td class="bulk-select topic-list-data">
-    <label for="bulk-select-{{topic.id}}">
-      <input type="checkbox" class="bulk-select" id="bulk-select-{{topic.id}}">
-    </label>
-  </td>
+<td class="bulk-select topic-list-data">
+  <label for="bulk-select-{{topic.id}}">
+    <input type="checkbox" class="bulk-select" id="bulk-select-{{topic.id}}">
+  </label>
+</td>
 {{/if}} --}}
 {{!-- shopify: element need:
 1. poster avatar
@@ -23,48 +24,36 @@
 9. Replies --}}
 
 <div class='main-link clearfix topic-list-data'>
+  <div class='category'>
+    {{category-link topic.category format="large"}}
+  </div>
   {{~raw-plugin-outlet name="topic-list-before-status"}}
   {{raw "topic-status" topic=topic}}
   {{~topic-link topic class="raw-link raw-topic-link"}}
-  {{!-- {{~#if showTopicPostBadges}}
-    {{~raw "topic-post-badges" unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
-  {{~/if}} --}}
+
   {{discourse-tags topic mode="list" tagsForUser=tagsForUser}}
   {{#if expandPinned}}
-    {{raw "list/topic-excerpt" topic=topic}}
+  {{raw "list/topic-excerpt" topic=topic}}
+  
   {{/if}}
   <div class='creator'>
-    {{#unless hideCategory}}
-      {{#unless topic.isPinnedUncategorized}}
-        {{category-link topic.category}}
-      {{/unless}}
-    {{/unless}}
     {{~#if topic.creator ~}}
-      <a href="/users/{{topic.creator.username}}" data-auto-route="true" data-user-card="{{topic.creator.username}}">{{topic.creator.username}}</a> <a href={{topic.url}}>{{format-date topic.createdAt format="tiny"}}</a>
+    <a href="/users/{{topic.creator.username}}" data-auto-route="true"
+      data-user-card="{{topic.creator.username}}">{{topic.creator.username}}</a> <a href={{topic.url}}>{{format-date
+      topic.createdAt format="tiny"}}</a>
     {{~/if ~}}
-    {{raw "list/action-list" topic=topic postNumbers=topic.liked_post_numbers className="likes" icon="heart"}}
   </div>
+   {{raw "list/action-list" topic=topic postNumbers=topic.liked_post_numbers className="likes" icon="heart"}}
 </div>
 
 
-  <div class="num likes topic-list-data">
-   
-      <a href='{{topic.summaryUrl}}'>
-        {{number topic.like_count}} {{d-icon "thumbs-up"}}
-      </a>
-  
-  </div>
+<div class="num likes topic-list-data">
 
+  <a href='{{topic.summaryUrl}}'>
+    {{number topic.like_count}} {{d-icon "thumbs-up"}}
+  </a>
 
-{{!-- {{#if showOpLikes}}
-  <div class="num likes topic-list-data">
-    {{#if hasOpLikes}}
-      <a href='{{topic.summaryUrl}}'>
-        {{number topic.op_like_count}} {{d-icon "heart"}}
-      </a>
-    {{/if}}
-  </div>
-{{/if}} --}}
+</div>
 
 {{raw "list/posts-count-column" topic=topic}}
 
@@ -72,15 +61,3 @@
   {{raw-plugin-outlet name="topic-list-before-view-count"}}
   {{number topic.views numberKey="views_long"}} {{d-icon "far-eye"}}
 </div>
-
-{{!-- <div class="last-post topic-list-data">
-  {{!-- <div class='poster-avatar'>
-    <a href="{{topic.lastPostUrl}}" data-user-card="{{topic.last_poster_username}}">{{avatar topic.lastPosterUser imageSize="medium"}}</a>
-  </div> --}}
-  {{!-- <div class='poster-info'>
-    <a href="{{topic.lastPostUrl}}">
-      {{format-date topic.createdAt format="tiny"}}
-    </a>
-    <span class='creator'> <a href="/users/{{topic.creator.username}}" data-auto-route="true" data-user-card="{{topic.creator.username}}">{{topic.creator.username}}</a> <a href={{topic.url}}>{{format-date topic.createdAt format="tiny"}}</a></span>
-  </div>
-</div> --}}
