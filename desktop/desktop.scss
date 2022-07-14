@@ -10,6 +10,7 @@ div.main-link > div.grid {
   }
   div.like {
     grid-column-start: 4;
+    padding:1px 5px;
     height: 80%;
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
