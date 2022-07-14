@@ -1,6 +1,6 @@
 div.main-link > div.grid {
   display: grid;
-  grid-column: 15% 15% 70%;
+  grid-template-columns: 15% 15% 70%;
   align-items: center;
   div.like {
     align-self:end;
