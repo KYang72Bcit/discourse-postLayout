@@ -22,7 +22,7 @@
   <div class='post details flex'>
     <div class="creator time flex">
       <a href="/users/{{topic.creator.username}}" data-auto-route="true"
-        data-user-card="{{topic.creator.username}}">{{topic.creator.username format="large"}}
+        data-user-card="{{topic.creator.username}}">{{topic.creator.username}}
       </a>
       {{!-- {{raw "list/activity-column" topic=topic class="num topic-list-data" tagName="div"}} --}}
     </div>
