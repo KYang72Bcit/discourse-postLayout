@@ -5,14 +5,14 @@ div.main-link > div.grid {
   .createTime > a {
     color: var(--primary-medium) !important;
     text-align: center !important;
-    font-size: var(--font-up-3);
+    font-size: var(--font-0-rem);
 
   }
   div.like {
     grid-column-start: 4;
     padding:0px 5px !important;
     margin: 2%;
-    height: var(--font-2-rem);
+    height: var(--font-up-3);
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
     align-items: center;
