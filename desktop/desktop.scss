@@ -10,6 +10,7 @@ div.main-link > div.grid {
   }
   div.like {
     grid-column-start: 4;
+    height: 80%;
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
     .views {
@@ -32,7 +33,7 @@ tr.topic-list-item {
   }
   display: grid !important;
   width: 100%;
-  grid-template-columns: 10% 80%;
+  grid-template-columns: 10% 90%;
   margin-left: 4%;
 }
 .poster-avatar {
