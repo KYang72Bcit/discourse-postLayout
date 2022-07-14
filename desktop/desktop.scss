@@ -10,15 +10,21 @@ div.main-link > div.grid {
   }
   div.like {
     grid-column-start: 4;
-    padding:0px 5px !important;
+    
     margin: 2%;
-    height: var(--font-up-3);
+    
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
     align-items: center;
     .views {
       border-left: solid 1px var(--primary-low-mid);
       border-right: solid 1px var(--primary-low-mid);
+      ::before, ::after {
+        content: "";
+      height: var(--font-up-2);
+      width: 1px;
+      background-color: var(--primary-low-mid);
+      }
     }
   } 
 
