@@ -1,7 +1,11 @@
 tr.topic-list-item {
   display: grid !important;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 10% 80%;
 }
+.poster-avatar {
+  justify-self: center;
+}
+
 .topic-list > .topic-list-body > .topic-list-item:nth-child(odd) {
   background-color: var(--secondary);
 }
