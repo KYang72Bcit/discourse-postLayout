@@ -2,6 +2,10 @@ div.main-link > div.grid {
   display: grid;
   grid-template-columns: 15% 15% 70%;
   align-items: center;
+  .createTime {
+    color: var(--primary-medium) !important;
+    text-align: center !important;
+  }
   div.like {
     align-self:end;
   } 
