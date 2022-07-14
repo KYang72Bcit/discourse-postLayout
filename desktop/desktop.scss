@@ -17,9 +17,7 @@ div.main-link > div.grid {
     grid-template-columns: repeat(3, 33.3%);
     align-items: center;
     .views {
-      // border-left: solid 1px var(--primary-low-mid);
-      // border-right: solid 1px var(--primary-low-mid);
-      ::before, ::after {
+      &::before, &::after {
         content: "";
       height: var(--font-up-2);
       width: 1px;
