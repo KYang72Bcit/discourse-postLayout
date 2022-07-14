@@ -28,8 +28,8 @@
       {{!-- {{raw "list/activity-column" topic=topic class="num topic-list-data" tagName="div"}} --}}
     </div>
 
-    <div class="time">
-       <a href={{topic.url}}>{{d-icon "fa-calendar"}} {{format-date topic.createdAt}}</a>
+    <div class="createTime">
+       <a href={{topic.url}}>{{d-icon "calendar"}} {{format-date topic.createdAt}}</a>
     </div>
 
    
