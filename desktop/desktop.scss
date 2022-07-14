@@ -1,9 +1,22 @@
 .status-solved {
+  position: relative;
   .d-icon-far-check-square {
     display: none !important;
   }
 
 }
+
+.status-solved::after {
+  content: "\2713 solved";
+  position: absolute;
+  display: block;
+  width: 70px;
+  padding: 2px 5px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+}
+
 div.main-link > div.grid {
   display: grid;
   grid-template-columns: 25% 25% 13% 34%;
