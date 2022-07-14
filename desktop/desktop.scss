@@ -1,3 +1,9 @@
+.status-solved {
+  .d-icon-far-check-square {
+    display: none !important;
+  }
+
+}
 div.main-link > div.grid {
   display: grid;
   grid-template-columns: 25% 25% 13% 34%;

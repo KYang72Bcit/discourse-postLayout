@@ -1,4 +1,4 @@
-{{!-- //记得改回.hbr --}}
+
 <div class='poster-avatar'>
   <a href="{{topic.firstPostUrl}}" data-user-card="{{topic.creator.username}}">{{avatar topic.creator
     imageSize="large"}}</a>
@@ -25,11 +25,11 @@
         data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
       </a>
      
-      {{!-- {{raw "list/activity-column" topic=topic class="num topic-list-data" tagName="div"}} --}}
+     
     </div>
 
     <div class="createTime">
-       <a href={{topic.url}}> {{d-icon "fa-clock-o"}}{{d-icon "clock"}}{{format-date topic.createdAt}}</a>
+       <a href={{topic.url}}> {{d-icon "fas-clock-o"}}{{d-icon "clock-o"}}{{format-date topic.createdAt}}</a>
     </div>
 
    
@@ -45,15 +45,7 @@
         {{raw-plugin-outlet name="topic-list-before-view-count"}}
        {{d-icon "far-eye"}} {{number topic.views numberKey="views_long"}} 
       </div>
-      {{!-- {{raw "list/action-list" topic=topic postNumbers=topic.liked_post_numbers className="likes" icon="heart"}}
-      --}}
-      {{!-- <div class="num likes topic-list-data">
-
-        <a href='{{topic.summaryUrl}}'>
-          {{number topic.like_count}} {{d-icon "thumbs-up"}}
-        </a>
-
-      </div> --}}
+     
 
       {{raw "list/posts-count-column" topic=topic}}
 
