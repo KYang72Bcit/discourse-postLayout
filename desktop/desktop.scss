@@ -8,6 +8,8 @@ div.main-link > div.grid {
   }
   div.like {
     align-self:end;
+    display: grid;
+    grid-template-columns: repeat(3);
   } 
 }
 tr.topic-list-item {
