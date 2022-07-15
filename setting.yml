@@ -1,0 +1,5 @@
+Svg_icons:
+  type: "list"
+  list_type: "compact"
+  default: "fa-calendar-star"
+  
