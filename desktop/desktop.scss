@@ -32,6 +32,9 @@ div.main-link > div.grid {
     font-size: var(--font-0-rem);
 
   }
+  .d-icon {
+    color: var(--tertiary) !important;
+  }
   div.like {
     grid-column-start: 4;
     
@@ -50,9 +53,7 @@ div.main-link > div.grid {
       position:relative;
       }
     }
-    .d-icon {
-      color: var(--tertiary) !important;
-    }
+    
   } 
 
 }
