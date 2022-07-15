@@ -37,12 +37,9 @@ div.main-link > div.grid {
   }
   div.like {
     grid-column-start: 4;
-    
-    margin: 2%;
-    
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
-    align-items: center;
+    align-items:bottom;
     .views {
       &::before, &::after {
         content: "";
