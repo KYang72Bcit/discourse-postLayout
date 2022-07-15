@@ -40,11 +40,11 @@ div.main-link > div.grid {
     grid-column-start: 4;
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
-    align-items:bottom;
+   
     .views {
       &::before, &::after {
         content: "";
-      // display: block;
+     
       height: var(--font-up-2);
       width: 1px;
       background-color: var(--primary-low-mid);
