@@ -1,5 +1,9 @@
+# svg_icons:
+#   default: 'question-circle|wallet'
+#   type: 'list'
+#   list_type: 'calendar-alt'
+
 svg_icons:
-  default: 'question-circle|wallet'
+  default: 'calendar-alt'
   type: 'list'
-  list_type: 'calendar-alt'
-  
+  list_type: 'compact'
