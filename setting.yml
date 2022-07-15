@@ -1,5 +1,5 @@
-Svg_icons:
-  type: "list"
-  list_type: "compact"
-  default: "fa-calendar-star"
+svg_icons:
+  default: 'question-circle|wallet'
+  type: 'list'
+  list_type: 'calendar-alt'
   
