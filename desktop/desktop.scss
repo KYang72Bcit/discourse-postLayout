@@ -65,13 +65,18 @@ div.main-link {
   }
 }
 tr.topic-list-item {
-  hover: {
-    border: 1px solid var(--tertiary) !important;
-  }
+ 
   display: grid !important;
   width: 95%;
   grid-template-columns: 10% 90%;
   margin-left: 4%;
+}
+
+.topic-list-item:hover {
+ 
+    border: 1px solid var(--tertiary-hover);
+    box-shadow: 0px 0px 5px #d2d5d9;
+  
 }
 .poster-avatar {
   justify-self: center;
