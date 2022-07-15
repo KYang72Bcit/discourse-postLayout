@@ -25,7 +25,7 @@
 div.main-link > div.grid {
   display: grid;
   grid-template-columns: 25% 25% 13% 34%;
-  // align-items:bottom !important;
+  align-items:center !important;
   // margin-bottom: 1%;
   .createTime > a {
     color: var(--primary-medium) !important;
