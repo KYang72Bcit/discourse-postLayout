@@ -91,7 +91,7 @@ tr.topic-list-item {
 .topic-list .topic-list-data a.title:not(.badge-notification) {
   color: var(--simple-theme-link-color);
   font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, Utkal, sans-serif;
+  //font-family: "Helvetica Neue", Helvetica, Arial, Utkal, sans-serif;
   font-size: 18px;
 }
 
@@ -253,5 +253,14 @@ body {
   .latest-topic-list-item.visited a.badge-wrapper,
   .category-topic-link.visited a.badge-wrapper {
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  div.main-link > div.grid {
+    display: grid;
+    grid-template-rows: repeat(3,33.3%);
+    align-items:center !important;
+    
   }
 }
