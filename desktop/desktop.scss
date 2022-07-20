@@ -74,8 +74,8 @@ tr.topic-list-item {
 }
 
 .topic-list-item:hover {
- 
-    border: 1.5px solid var(--tertiary);
+  outline: 1.5px solid var(--tertiary);
+    // border: 1.5px solid var(--tertiary);
      box-shadow: 0px 0px 5px #ebedef;
   
 }
