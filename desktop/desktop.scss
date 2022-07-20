@@ -253,7 +253,7 @@ body {
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
   tr.topic-list-item {
     width: 100%;
 
@@ -266,6 +266,16 @@ body {
     div.like {
      grid-row-start: 2; 
      grid-column: 1/-1;
+     .likes {
+      grid-column-start: 1;
+
+     }
+     .views {
+      grid-column-start: 2;
+     }
+     .posts {
+      grid-column-start: 3;
+     }
    
     }
     
