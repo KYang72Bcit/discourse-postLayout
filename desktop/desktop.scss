@@ -44,16 +44,6 @@ div.main-link > div.grid {
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
     align-items: center;
-    .views {
-      &::before, &::after {
-        content: "";
-     
-      height: var(--font-up-2);
-      width: 1px;
-      background-color: var(--primary-low-mid);
-      position:relative;
-      }
-    }
     
   } 
 
