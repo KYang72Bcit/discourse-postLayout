@@ -258,7 +258,9 @@ body {
 
      }
      .views {
+      display: inline-block !important;
       grid-column-start: 2;
+
      }
      .posts {
       grid-column-start: 3;
