@@ -1,9 +1,8 @@
 <div class='num posts-map posts {{view.likesHeat}} topic-list-data' title='{{view.title}}'>
    <a href='{{topic.summaryUrl}}'>
    
-      {{#if (not this.site.mobileView)}}
-        {{d-icon "far-comment"}} 
-      {{/if}} {{number topic.replyCount}} 
+      
+        {{d-icon "far-comment"}} {{number topic.replyCount}} 
       </a>
  
 </div>
