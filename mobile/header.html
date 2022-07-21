@@ -1,0 +1,64 @@
+<script type='text/x-handlebars' data-template-name='mobile/list/topic-list-item.hbr'>
+    <td class="topic-list-data"> 
+        <div class='poster-avatar'>
+            <a href="{{topic.firstPostUrl}}" data-user-card="{{topic.creator.username}}">{{avatar topic.creator
+              imageSize="large"}}</a>
+          </div>
+          {{~raw-plugin-outlet name="topic-list-before-columns"}}
+          
+          
+          <div class='main-link clearfix topic-list-data'>
+            <div class='category'>
+              {{category-link topic.category format="large"}}
+            </div>
+            {{~raw-plugin-outlet name="topic-list-before-status"}}
+            {{raw "topic-status" topic=topic}}
+            {{~topic-link topic class="raw-link raw-topic-link"}}
+          
+            {{discourse-tags topic mode="list" tagsForUser=tagsForUser}}
+            {{#if expandPinned}}
+            {{raw "list/topic-excerpt" topic=topic}}
+          
+            {{/if}}
+            <div class='post details grid'>
+              <div class="creator"> <span>By</span>
+                <a href="/users/{{topic.creator.username}}" data-auto-route="true"
+                  data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
+                </a>
+               
+               
+              </div>
+          
+              <div class="createTime">
+                 <a href={{topic.url}}> {{d-icon "calendar-alt"}}{{format-date topic.createdAt}}</a>
+              </div>
+              
+          
+             
+              <div class="like view reply">
+                <div class="num likes topic-list-data">
+          
+                  <a href='{{topic.summaryUrl}}'>
+                    {{d-icon "far-thumbs-up"}} {{number topic.like_count}}
+                  </a>
+          
+                </div>
+                <div class="num views {{topic.viewsHeat}} topic-list-data">
+                  {{raw-plugin-outlet name="topic-list-before-view-count"}}
+                 {{d-icon "far-eye"}} {{number topic.views numberKey="views_long"}} 
+                </div>
+               
+          
+                {{raw "list/posts-count-column" topic=topic}}
+          
+              </div>
+          
+              {{!-- <div class="num views {{topic.viewsHeat}} topic-list-data">
+                {{raw-plugin-outlet name="topic-list-before-view-count"}}
+                {{number topic.views numberKey="views_long"}} {{d-icon "far-eye"}}
+              </div> --}}
+            </div>
+          
+          </div>
+    </td>
+ 
