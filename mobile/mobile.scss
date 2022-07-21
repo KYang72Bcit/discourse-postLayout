@@ -4,7 +4,7 @@
     .d-icon-far-check-square {
       display: none !important;
     }
-    div.poster-avatar{
+    div.poster-avatar::after{
       content: "\2713 \00a0 Solved";
     color: var(--blend-primary-secondary-5);
     font-size: var(--font-down-1);
@@ -19,8 +19,7 @@
     right: 5px;
     vertical-align: top;
     top: 18px;
-    margin-top: 1.5rem;
-      
+    margin-top: 1.5rem;  
     }
 
     // &::after {
