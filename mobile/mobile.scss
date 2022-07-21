@@ -1,26 +1,26 @@
-// .status-solved {
-//     position: relative;
-//     .d-icon-far-check-square {
-//       display: none !important;
-//     }
+.status-solved {
+    position: relative;
+    .d-icon-far-check-square {
+      display: none !important;
+    }
   
-//   }
+  }
   
-//   .status-solved::after {
-//     content: "\2713 \00a0 Solved";
-//     color: var(--blend-primary-secondary-5);
-//     font-size: var(--font-down-1);
-//     font-weight: 700;
-//     background-color: var(--tertiary);
-//     border-radius: 5%;
-//     position: absolute;
-//     display: block;
-//     width: 70px;
-//     padding: 3px 6px;
-//     height: 20px;
-//     right: 10px;
-//     top: 15px;
-//   }
+  .status-solved::after {
+    content: "\2713 \00a0 Solved";
+    color: var(--blend-primary-secondary-5);
+    font-size: var(--font-down-1);
+    font-weight: 700;
+    background-color: var(--tertiary);
+    border-radius: 5%;
+    position: absolute;
+    display: block;
+    width: 50px;
+    padding: 3px 6px;
+    height: 15px;
+    right: 5px;
+    top: 10px;
+  }
   
 div.main-link > div.grid {
     display: grid;
@@ -30,7 +30,8 @@ div.main-link > div.grid {
     .createTime > a {
         color: var(--primary-medium) !important;
         text-align: center !important;
-        font-size: var(--font-0-rem);
+        font-size: var(--font-down-1) !important;
+        font-weight: 500 !important;
     
       }
       .d-icon {
