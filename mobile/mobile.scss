@@ -6,6 +6,7 @@
     }
     div.poster-avatar {
       display: flex;
+      align-items: center;
     }
     div.poster-avatar::after{
       content: "\2713 \00a0 Solved";
@@ -19,8 +20,8 @@
     height: 18px;
     right: 25px;
     vertical-align: top;
-    margin-top: 0.5rem; 
-    margin-left: auto; 
+    // margin-top: 0.5rem; 
+    // margin-left: auto; 
     }
   
   }
