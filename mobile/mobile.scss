@@ -1,3 +1,4 @@
+.topic-list-body{position:relative !important;}
 .status-solved {
     position: relative;
     .d-icon-far-check-square {
@@ -16,7 +17,7 @@
       padding: 3px 6px;
       height: 18px;
       right: 5px;
-      bottom: -8px;
+      top: 8px;
     }
   
   }
