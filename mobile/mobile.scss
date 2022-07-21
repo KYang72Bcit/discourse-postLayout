@@ -4,6 +4,24 @@
     .d-icon-far-check-square {
       display: none !important;
     }
+    div.poster-avtar{
+      content: "\2713 \00a0 Solved";
+    color: var(--blend-primary-secondary-5);
+    font-size: var(--font-down-1);
+    font-weight: 700;
+    background-color: var(--tertiary);
+    border-radius: 5%;
+    /* position: absolute; */
+    // display: block;
+    width: 65px;
+    padding: 3px 6px;
+    height: 18px;
+    right: 5px;
+    vertical-align: top;
+    top: 18px;
+    margin-top: 1.5rem;
+
+    }
     // &::after {
     //   content: "\2713 \00a0 Solved";
     //   color: var(--blend-primary-secondary-5);
@@ -22,23 +40,23 @@
   
   }
 
-  .status-solved::after {
-    content: "\2713 \00a0 Solved";
-    color: var(--blend-primary-secondary-5);
-    font-size: var(--font-down-1);
-    font-weight: 700;
-    background-color: var(--tertiary);
-    border-radius: 5%;
-    /* position: absolute; */
-    // display: block;
-    width: 65px;
-    padding: 3px 6px;
-    height: 18px;
-    right: 5px;
-    vertical-align: top;
-    top: 18px;
-    margin-top: 1.5rem;
-    }
+  // .status-solved::after {
+  //   content: "\2713 \00a0 Solved";
+  //   color: var(--blend-primary-secondary-5);
+  //   font-size: var(--font-down-1);
+  //   font-weight: 700;
+  //   background-color: var(--tertiary);
+  //   border-radius: 5%;
+  //   /* position: absolute; */
+  //   // display: block;
+  //   width: 65px;
+  //   padding: 3px 6px;
+  //   height: 18px;
+  //   right: 5px;
+  //   vertical-align: top;
+  //   top: 18px;
+  //   margin-top: 1.5rem;
+  //   }
   
   
 
