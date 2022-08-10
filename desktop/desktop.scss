@@ -145,8 +145,10 @@ tr.topic-list-item {
     font-size: 10px;
     margin-right: -2px;
   }
-  .topic-list-data.num, .topic-list-data.num > a span {
+  .topic-list-data.num, .topic-list-data.num > a {
     padding: 0 !important;
+  }
+  .topic-list-data.num > a span {
     color: var(--primary-medium);
   }
   .num.posts-map {
