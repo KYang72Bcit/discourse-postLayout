@@ -50,10 +50,9 @@ div.main-link {
   }
 }
 tr.topic-list-item {
- 
   display: grid !important;
-  width: 95%;
-  grid-template-columns: 10% 90%;
+  width: 100%;
+  grid-template-columns: max-content 1fr;
   margin-left: 4%;
 }
 
@@ -253,6 +252,7 @@ body {
 @media screen and (max-width: 1150px) {
  
   div.main-link > div.grid {
+    flex-direction: column;
     div.like {
      grid-row-start: 2; 
      grid-column: 1/-1;
