@@ -23,7 +23,6 @@
 }
 
 div.main-link > div.grid {
-  // margin-bottom: 1%;
   .createTime > a {
     color: var(--primary-medium) !important;
     text-align: center !important;
@@ -35,7 +34,6 @@ div.main-link > div.grid {
   }
   div.like {
     grid-column-start: 4;
-    
     margin: 2%;
     align-items: center;
     
@@ -146,8 +144,9 @@ tr.topic-list-item {
     font-size: 10px;
     margin-right: -2px;
   }
-  .topic-list-data.num, .topic-list-data.num > a {
-    padding: 0;
+  .topic-list-data.num, .topic-list-data.num > a span {
+    padding: 0 !important;
+    color: var(--primary-medium);
   }
   .num.posts-map {
     position: relative;
@@ -173,6 +172,12 @@ tr.topic-list-item {
 
 .topic-list .creator .relative-date {
   margin-left: 8px;
+}
+
+.topic-user-time-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .badge-category-bg {
