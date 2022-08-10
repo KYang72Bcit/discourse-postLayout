@@ -76,7 +76,6 @@ tr.topic-list-item {
 .topic-list .topic-list-data a.title:not(.badge-notification) {
   color: var(--simple-theme-link-color);
   font-weight: normal;
-  //font-family: "Helvetica Neue", Helvetica, Arial, Utkal, sans-serif;
   font-size: 18px;
 }
 
@@ -145,11 +144,19 @@ tr.topic-list-item {
     font-size: 10px;
     margin-right: -2px;
   }
+  .topic-list-data.num {
+    width: max-content;
+  }
   .topic-list-data.num, .topic-list-data.num > a {
     padding: 0 !important;
+    display: flex;
+    align-items: center;
   }
   .topic-list-data.num > a span {
-    color: var(--primary-medium);
+    color: var(--primary-medium) !important;
+  }
+  .topic-list-data.num svg {
+    margin: 0;
   }
   .num.posts-map {
     position: relative;
