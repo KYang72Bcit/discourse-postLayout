@@ -23,6 +23,8 @@
 }
 
 div.main-link > div.grid {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
   .createTime > a {
     color: var(--primary-medium) !important;
     text-align: center !important;
@@ -252,8 +254,8 @@ body {
 @media screen and (max-width: 1150px) {
  
   div.main-link > div.grid {
-    flex-direction: column;
-    margin-right: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
     div.like {
      grid-row-start: 2; 
      grid-column: 1/-1;
