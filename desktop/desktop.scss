@@ -23,9 +23,6 @@
 }
 
 div.main-link > div.grid {
-  display: grid;
-  grid-template-columns: 150px 150px auto 250px;
-  align-items:center !important;
   // margin-bottom: 1%;
   .createTime > a {
     color: var(--primary-medium) !important;
@@ -40,9 +37,6 @@ div.main-link > div.grid {
     grid-column-start: 4;
     
     margin: 2%;
-    
-    display: grid;
-    grid-template-columns: repeat(3, 33.3%);
     align-items: center;
     
   } 
@@ -53,6 +47,8 @@ div.main-link {
     font-weight: 700 !important;
     font-size: var(--font-up-1) !important;
     color: var(--header_primary) !important;
+    font-size: var(--font-0) !important;
+    padding: 0;
   }
 }
 tr.topic-list-item {
@@ -129,6 +125,9 @@ tr.topic-list-item {
 }
 .topic-list {
   border-top: none;
+  .topic-excerpt {
+    font-size: 14px !important;
+  }
 }
 
 .topic-list .topic-list-data:first-of-type {
@@ -147,8 +146,8 @@ tr.topic-list-item {
     font-size: 10px;
     margin-right: -2px;
   }
-  .topic-list-data.num {
-    flex: 0 1 100px;
+  .topic-list-data.num, .topic-list-data.num > a {
+    padding: 0;
   }
   .num.posts-map {
     position: relative;
@@ -249,10 +248,6 @@ body {
 @media screen and (max-width: 1150px) {
  
   div.main-link > div.grid {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    align-items:center !important;
     div.like {
      grid-row-start: 2; 
      grid-column: 1/-1;

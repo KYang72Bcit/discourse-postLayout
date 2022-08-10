@@ -39,15 +39,9 @@
 }
   
 div.main-link > div.grid {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    align-items:center !important;
     .createTime > a {
         color: var(--primary-medium) !important;
         text-align: center !important;
-       
-    
       }
       .d-icon {
         color: var(--tertiary) !important;

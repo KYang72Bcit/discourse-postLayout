@@ -25,16 +25,15 @@
 
   {{/if}}
   <div class='post details grid'>
-    <div class="creator"> <span>By</span>
-      <a href="/users/{{topic.creator.username}}" data-auto-route="true"
-        data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
-      </a>
-     
-     
-    </div>
-
-    <div class="createTime">
-       <a href={{topic.url}}> {{d-icon "calendar-alt"}}{{format-date topic.createdAt}}</a>
+    <div class="topic-user-time-wrapper">
+      <div class="creator"> <span>By</span>
+        <a href="/users/{{topic.creator.username}}" data-auto-route="true"
+          data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
+        </a>
+      </div>
+      <div class="createTime">
+         <a href={{topic.url}}> {{d-icon "calendar-alt"}}{{format-date topic.createdAt}}</a>
+      </div>
     </div>
     
 
