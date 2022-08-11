@@ -122,14 +122,27 @@
                 display: grid !important;
                 grid-template-rows: 4fr 5fr;
                 grid-template-columns: unset;
-                justify-items: center;
+                // justify-items: center;
+                align-items: center;
                 margin: 0;
                 .main-link {
                     grid-row: 2;
                     padding: 1.5rem;
-                    height: 100%;
-                    width: 100%;
                     box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    grid-template-rows: max-content max-content max-content;
+                    box-sizing: border-box;
+                    div.discourse-tags {
+                        grid-row: 3;
+                    }
+                    .date-time-container {
+                        grid-row: 1;
+                    }
+                    .title.raw-link.raw-topic-link {
+                        grid-row: 2;
+                    }
                 }
             }
         }
