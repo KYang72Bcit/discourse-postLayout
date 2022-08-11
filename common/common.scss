@@ -140,7 +140,7 @@
                     .date-time-container {
                         grid-row: 3;
                     }
-                    .title.raw-link.raw-topic-link {
+                    > .title.raw-link.raw-topic-link {
                         grid-row: 2;
                         display: -webkit-box;
                         -webkit-line-clamp: 3;
