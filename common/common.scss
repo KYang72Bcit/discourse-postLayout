@@ -135,10 +135,10 @@
                     grid-template-rows: max-content max-content max-content;
                     box-sizing: border-box;
                     div.discourse-tags {
-                        grid-row: 3;
+                        grid-row: 1;
                     }
                     .date-time-container {
-                        grid-row: 1;
+                        grid-row: 3;
                     }
                     .title.raw-link.raw-topic-link {
                         grid-row: 2;
