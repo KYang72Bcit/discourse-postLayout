@@ -39,12 +39,12 @@
 }
   
 div.main-link > div.grid {
-  display: grid;
-
+  display: block;
     .creator, .createTime {
       display: inline-block;
     }
     .createTime {
+      margin-left: 2rem;
       a {
         color: var(--primary-medium) !important;
         text-align: center !important;
