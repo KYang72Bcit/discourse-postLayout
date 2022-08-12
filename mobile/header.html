@@ -5,11 +5,15 @@
               imageSize="large"}}</a>
           </div>
           {{~raw-plugin-outlet name="topic-list-before-columns"}}
-          {{#if topic.image_url}}
+          <!-- {{#if topic.image_url}}
             <div class="topic-image">
               <img src="{{topic.image_url}}" />
             </div>
-          {{/if}}
+          {{/if}} -->
+          <div class="topic-image">
+            <img src="{{topic.image_url}}" />
+          </div>
+
           
           
           <div class='main-link clearfix topic-list-data'>
