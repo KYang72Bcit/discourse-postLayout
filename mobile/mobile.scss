@@ -53,18 +53,16 @@ div.main-link > div.grid {
       .d-icon {
         color: var(--tertiary) !important;
       }
-    div.like.view.reply {
+    div.like {
     font-size: var(--font-down-1) !important;
     font-weight: 500 !important;
-    > * {
-      width: auto;
-    }
      .posts {
       font-size: var(--font-down-1) !important;
       font-weight: 500 !important;
-      
      }
-   
+     .topic-list-data {
+      width: auto;
+     }
     }
     
   }
