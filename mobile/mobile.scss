@@ -39,35 +39,30 @@
 }
   
 div.main-link > div.grid {
-    .createTime > a {
+  display: block;
+    .creator, .createTime {
+      display: inline-block;
+    }
+    .createTime {
+      margin-left: 2rem;
+      a {
         color: var(--primary-medium) !important;
         text-align: center !important;
       }
+    } 
       .d-icon {
         color: var(--tertiary) !important;
       }
     div.like {
     font-size: var(--font-down-1) !important;
     font-weight: 500 !important;
-     grid-row-start: 2; 
-     grid-column: 1/-1;
-     display: grid;
-     grid-template-columns: repeat(3, 33.3%);
-     align-items: center;
-     .likes {
-      grid-column-start: 1;
-
-     }
-     .views {
-      grid-column-start: 2;
-     }
      .posts {
-      grid-column-start: 3;
       font-size: var(--font-down-1) !important;
       font-weight: 500 !important;
-      
      }
-   
+     .topic-list-data {
+      width: auto;
+     }
     }
     
   }
