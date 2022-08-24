@@ -1,4 +1,4 @@
-
+<a href={{topic.url}}>
   <div class="poster-avatar">
     <a
       href="{{topic.firstPostUrl}}"
@@ -68,3 +68,4 @@
     </div> --}}
     </div>
   </div>
+</a>
