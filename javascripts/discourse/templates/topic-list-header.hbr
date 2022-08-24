@@ -1,5 +1,6 @@
 {{!-- //记得改回.hbs --}}
 <tr class="topic-list-header-row">
+  <a href={{topic.url}}></a>
   {{!-- {{~raw-plugin-outlet name="topic-list-header-before"~}}
   {{#if bulkSelectEnabled}}
     <div class="bulk-select">
@@ -18,4 +19,5 @@
   {{!-- {{raw "topic-list-header-column" sortable=sortable number='true' order='posts' name='replies' ariaLabel=(i18n "sr_replies")}}
   {{raw "topic-list-header-column" sortable='true' number='true' order='posts' }}
   {{raw "topic-list-header-column" sortable='true' order='activity'}} --}}
+  </a>
 </tr>
