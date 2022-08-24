@@ -1,6 +1,6 @@
 {{!-- //记得改回.hbs --}}
 <tr class="topic-list-header-row">
-  <a href={{topic.url}}></a>
+  <a href={{topic.url}}>
   {{!-- {{~raw-plugin-outlet name="topic-list-header-before"~}}
   {{#if bulkSelectEnabled}}
     <div class="bulk-select">
