@@ -1,4 +1,12 @@
-.topic-list-body{position:relative !important;}
+table.topic-list {
+  > tbody.topic-list-body {
+    position:relative !important;
+    > tr.do-not-display {
+      display:none !important;
+    }
+  }
+}
+
 .status-solved {
     position: relative;
     .d-icon-far-check-square {
