@@ -180,6 +180,11 @@ tr.topic-list-item {
   }
 }
 
+.focused {
+  box-shadow: unset !important;
+}
+
+
 .topic-list .creator .relative-date {
   margin-left: 8px;
 }
